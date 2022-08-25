@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// 实现strstr
 func strStr(haystack string, needle string) int {
 	if len(needle) == 0 {
 		return 0
