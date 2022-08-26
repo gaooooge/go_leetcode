@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// 原本还有额外的一个参数来统计是否重置，看了扣友的解法，自叹不如
 func lengthOfLastWord(s string) int {
 	num := 0
 	for i := len(s) - 1; i >= 0; i-- {
