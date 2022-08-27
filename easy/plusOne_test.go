@@ -7,7 +7,7 @@ func plusOne(d []int) []int {
 	for i := len(d) - 1; i >= 0; i-- {
 		if d[i]+j >= 10 {
 			j = 1
-			i = i % 10
+			d[i] = (d[i] + j) % 10
 		} else {
 			d[i] = d[i] + j
 			j = 0
