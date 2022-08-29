@@ -6,6 +6,7 @@ import (
 	"testing"
 )
 
+// 没搞懂这一题
 func merge(num1 []int, m int, num2 []int, n int) []int {
 	copy(num1[m:], num2)
 	sort.Ints(num1)
