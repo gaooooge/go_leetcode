@@ -34,6 +34,10 @@ func cmp(p *treeNode1, q *treeNode1) bool {
 		return false
 	}
 
+	if p.Val != q.Val {
+		return false
+	}
+
 	return cmp(p.Left, q.Right) && cmp(p.Right, q.Left)
 }
 

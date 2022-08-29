@@ -11,6 +11,7 @@ type treeNode struct {
 	Right *treeNode
 }
 
+// 看了大神解法，豁然开朗
 func isSameTree(p *treeNode, q *treeNode) bool {
 	if p == nil && q == nil {
 		return true
