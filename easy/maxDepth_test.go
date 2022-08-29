@@ -8,6 +8,7 @@ type treeNode2 struct {
 	Right *treeNode2
 }
 
+// 二叉树的最大深度
 func maxDepth(r *treeNode2) int {
 	if r == nil {
 		return 0
