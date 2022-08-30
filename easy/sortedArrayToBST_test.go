@@ -13,6 +13,9 @@ type treeNode3 struct {
 
 func sortedArrayToBST(nums []int) *treeNode3 {
 	length := len(nums)
+	if length == 0 {
+		return nil
+	}
 	mix := length >> 1
 
 	return &treeNode3{
