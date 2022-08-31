@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// 寻找数组的中心下标 数组左右平衡， 感觉和双层遍历效率差不多少
 func pivotIndex(n []int) int {
 	total := 0
 	for i := range n {
@@ -15,7 +16,6 @@ func pivotIndex(n []int) int {
 	rightSum := 0
 	for i := range n {
 		rightSum = total - leftSum - n[i]
-		fmt.Println(i, total, leftSum, rightSum)
 
 		if leftSum == rightSum {
 			return i
