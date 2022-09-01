@@ -28,13 +28,13 @@ func removeDuplicatesV2(nums []int) int {
 			nums[index1] = nums[index2]
 			index2++
 		}
+		fmt.Println(index1, index2, nums)
 	}
-	fmt.Println(nums)
 	return index1 + 1
 }
 
 func TestRemoveDuplicates(t *testing.T) {
-	arr := []int{1, 1, 2, 3, 4, 5, 6, 7, 7, 7}
+	arr := []int{1, 1, 1, 2, 2, 2, 3, 4, 5, 6, 7, 7, 7}
 	count := removeDuplicatesV2(arr)
 	fmt.Println("删除有序数组中的重复项")
 	fmt.Println(count)
