@@ -1,17 +1,21 @@
 package easy
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 // 二进制矩阵中的特殊位置
 func numSpecial(mat [][]int) (ans int) {
-	rowsSum := make([]int, len(mat))
-	colsSum := make([]int, len(mat[0]))
+	rowsSum := make([]int, len(mat))    //行
+	colsSum := make([]int, len(mat[0])) //列
 	for i, row := range mat {
 		for j, x := range row {
 			rowsSum[i] += x
 			colsSum[j] += x
 		}
 	}
+	fmt.Println(rowsSum, colsSum)
 	for i, row := range mat {
 		for j, x := range row {
 			if x == 1 && rowsSum[i] == 1 && colsSum[j] == 1 {
