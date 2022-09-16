@@ -27,7 +27,7 @@ func SetList(nums []int) *ListNode {
 		a.Next = prev
 		prev = a
 	}
-	
+	return prev
 }
 
 func TestHasCycle(t *testing.T) {

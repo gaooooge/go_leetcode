@@ -1,12 +1,16 @@
 package easy
 
-import "math"
+import (
+	"fmt"
+	"math"
+	"testing"
+)
 
 func isValidBST(root *TreeNode) bool {
-	return helper(root,math.MinInt64,math.MaxInt64)
+	return helper(root, math.MinInt64, math.MaxInt64)
 }
 
-func helper(root *TreeNode, lower,upper int) bool {
+func helper(root *TreeNode, lower, upper int) bool {
 	if root == nil {
 		return true
 	}
@@ -18,7 +22,6 @@ func helper(root *TreeNode, lower,upper int) bool {
 	return helper(root.Left, lower, root.Val) && helper(root.Right, root.Val, upper)
 }
 
-
 func TestIsValidBST(t *testing.T) {
-
+	fmt.Println(123)
 }
