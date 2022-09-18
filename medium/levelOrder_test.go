@@ -1,4 +1,4 @@
-package easy
+package medium
 
 type treeNode8 struct {
 	Val   int
