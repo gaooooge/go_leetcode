@@ -1,6 +1,6 @@
 package easy
 
-//杨辉三角
+// 杨辉三角
 func generate(numRows int) [][]int {
 	ans := make([][]int, numRows)
 	for i := range ans {
