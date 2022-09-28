@@ -4,9 +4,9 @@
 
     年度目标：掌握并理解常见数据结构，掌握golang语法运用
 
-[当前进度](https://leetcode.cn/u/gaooooge/) 
+[我的当前进度](https://leetcode.cn/u/gaooooge/) 
 
-当前计划：
+我的当前计划：
 
 阅读【初级算法】目前进度 100%
 
