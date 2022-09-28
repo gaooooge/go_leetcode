@@ -1,4 +1,4 @@
-package treeNode
+package tree
 
 import (
 	"fmt"
